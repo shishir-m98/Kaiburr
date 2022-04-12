@@ -1,0 +1,20 @@
+<div class="styles">
+
+<h1>Current Player: {{ player }} </h1>
+
+<button mat-raised-button  color="warn" (click)="newGame()">Start new Game</button>
+
+
+<h2 *ngIf="winner">
+    Player {{ winner }} won the game!
+</h2>
+
+
+<main>
+    <div *ngFor="let value of squares; let i = index" (click)="makeMove(i)">
+        <button nbButton *ngIf="!value">{{ value }}</button>
+        <button mat-raised-button  color="primary" *ngIf="value == 'X'">{{ value }}</button>
+        <button mat-raised-button  color="primary" *ngIf="value == 'O'">{{ value }}</button> 
+    </div>
+</main>
+</div>

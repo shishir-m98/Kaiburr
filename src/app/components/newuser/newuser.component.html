@@ -1,0 +1,13 @@
+<h2 style="text-align: center;">New User Dashboard</h2>
+<h3 style="text-align: center; font-weight: 800;">USER ID: {{userid}}</h3>
+<form class="container">    
+    <!-- <mat-label>Enter your Title</mat-label> -->
+    <input type="text" #title name="title" placeholder="Enter your title...">
+    <br><br>
+    <!-- <mat-label>Enter your Body</mat-label> -->
+    <input type="text" #body name="body" placeholder="Enter your body...">
+    <br><br>
+    <a>
+        <button mat-raised-button color="primary" (click)="getData(title.value, body.value)">Add</button>
+    </a>
+</form>

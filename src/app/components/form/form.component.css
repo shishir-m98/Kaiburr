@@ -1,0 +1,40 @@
+.style{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.example-form{
+  background-color: #ebfafa;
+  text-align: center;
+  border: 7px;
+  border-color: #0400ff;
+  border-style: none none none solid;
+  padding: 30px;
+}
+mat-label{
+  color: black;
+}
+.example-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+  width: 200px;
+}
+
+.example-right-align {
+  text-align: right;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+
+input.example-right-align {
+  -moz-appearance: textfield;
+}
+
+
+button {
+  /* text-align: center; */
+  width: 120px;
+}

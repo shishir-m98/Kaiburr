@@ -1,0 +1,11 @@
+<h2 style="text-align: center;">User Dashboard</h2>
+<h3 style="text-align: center; font-weight: 800;">USER ID: {{user.id}}</h3>
+<form class="container">    
+    <input type="text" #title name="title" value="{{user.title}}" >
+    <br><br>
+    <input type="text" #body name="body" value="{{user.body}}" >
+    <br><br>
+    <a>
+        <button mat-raised-button color="primary" (click)="getData(title.value, body.value)">Save</button>
+    </a>
+</form>
